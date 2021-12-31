@@ -1,0 +1,17 @@
+{% extends './base.html' %}
+
+
+{% block content %}
+	
+	<h1>Welcome !</h1>
+	<p>This is dessstech</p>
+	{% for account in accounts %}
+		<p>{{account}} | {{account.user.email}} | {{account.username}|
+    </p>
+   
+	{% endfor %}
+
+
+</div>
+
+{% endblock content %}
